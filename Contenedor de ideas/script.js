@@ -405,7 +405,7 @@ function setupContactModal() {
             }
         }
 
-        // Send data to n8n webhook
+        // Send data to n8n webhook (MODO PRUEBA)
         fetch('https://n8n.ufxbwh.easypanel.host/webhook-test/f0cda06d-a8d3-441e-8b2e-c733abe83530', {
             method: 'POST',
             mode: 'no-cors',
@@ -417,7 +417,7 @@ function setupContactModal() {
             .then(response => {
                 // With no-cors, we get an "opaque" response (status 0, ok false)
                 // But the request WAS sent successfully and n8n received it.
-                console.log('✅ Formulario enviado (modo no-cors):', formData);
+                console.log('✅ Formulario enviado (modo no-cors):', data);
 
                 // Show success message immediately
                 formSuccess.classList.add('active');
