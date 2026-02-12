@@ -933,23 +933,29 @@
 
                 <div class="form-row">
                     <div class="form-group">
+                        <label for="name" class="form-label">Nombre completo *</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
                         <label for="company" class="form-label">Empresa *</label>
                         <input type="text" id="company" name="company" class="form-input"
                             placeholder="Nombre de tu empresa" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="form-label">Dirección de correo electrónico *</label>
-                        <input type="email" id="email" name="email" class="form-input" placeholder="Ej: tu@email.com"
-                            required>
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="phone" class="form-label">Teléfono *</label>
-                        <input type="tel" id="phone" name="phone" class="form-input" placeholder="Ej: 600 123 456"
+                        <label for="email" class="form-label">Email de contacto *</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com"
                             required>
                     </div>
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Teléfono *</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" placeholder="600 000 000" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
                     <div class="form-group">
                         <label for="employees" class="form-label">Nº trabajadores *</label>
                         <select id="employees" name="employees" class="form-input" required
@@ -961,12 +967,11 @@
                             <option value="50-249">Entre 50 y 249 empleados</option>
                         </select>
                     </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="activity" class="form-label">Actividad comercial *</label>
-                    <input type="text" id="activity" name="activity" class="form-input"
-                        placeholder="¿A qué se dedica tu empresa?" required>
+                    <div class="form-group">
+                        <label for="activity" class="form-label">Actividad comercial *</label>
+                        <input type="text" id="activity" name="activity" class="form-input"
+                            placeholder="¿A qué se dedica tu empresa?" required>
+                    </div>
                 </div>
 
                 <div class="form-group">
@@ -975,37 +980,7 @@
                         placeholder="Cuéntanos brevemente qué necesitas..." required></textarea>
                 </div>
 
-                <div class="form-group">
-                    <label class="form-label">Categoría (Puedes marcar varias)</label>
-                    <div
-                        style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; font-size: 13px; color: var(--text-secondary);">
-                        <label style="display: flex; gap: 8px; align-items: center; cursor: pointer;"><input
-                                type="checkbox" name="category" value="Necesito asesoramiento"> Necesito
-                            asesoramiento</label>
-                        <label style="display: flex; gap: 8px; align-items: center; cursor: pointer;"><input
-                                type="checkbox" name="category" value="Sitio Web"> Sitio Web</label>
-                        <label style="display: flex; gap: 8px; align-items: center; cursor: pointer;"><input
-                                type="checkbox" name="category" value="Tienda Online"> Tienda Online</label>
-                        <label style="display: flex; gap: 8px; align-items: center; cursor: pointer;"><input
-                                type="checkbox" name="category" value="Redes sociales"> Redes sociales</label>
-                        <label style="display: flex; gap: 8px; align-items: center; cursor: pointer;"><input
-                                type="checkbox" name="category" value="Gestión de clientes"> Gestión de clientes</label>
-                        <label style="display: flex; gap: 8px; align-items: center; cursor: pointer;"><input
-                                type="checkbox" name="category" value="Gestión de Procesos"> Gestión de Procesos</label>
-                        <label style="display: flex; gap: 8px; align-items: center; cursor: pointer;"><input
-                                type="checkbox" name="category" value="Oficina Virtual"> Oficina Virtual</label>
-                        <label style="display: flex; gap: 8px; align-items: center; cursor: pointer;"><input
-                                type="checkbox" name="category" value="Factura electrónica"> Factura electrónica</label>
-                        <label style="display: flex; gap: 8px; align-items: center; cursor: pointer;"><input
-                                type="checkbox" name="category" value="Ciberseguridad"> Ciberseguridad</label>
-                        <label style="display: flex; gap: 8px; align-items: center; cursor: pointer;"><input
-                                type="checkbox" name="category" value="Comunicaciones seguras"> Comunicaciones
-                            seguras</label>
-                        <label style="display: flex; gap: 8px; align-items: center; cursor: pointer;"><input
-                                type="checkbox" name="category" value="Business Intelligence"> Business
-                            Intelligence</label>
-                    </div>
-                </div>
+
 
                 <button type="submit" class="btn-primary btn-large btn-submit" style="margin-top: 20px;">
                     Enviar Solicitud
